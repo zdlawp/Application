@@ -76,7 +76,7 @@ public class MyEclipseKeyGen {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println("«Î ‰»Î Subscriber: ");
+			System.out.print("Subscriber: ");
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 			String userId = null;
 			userId = reader.readLine();
@@ -87,7 +87,6 @@ public class MyEclipseKeyGen {
 			MyEclipseKeyGen myeclipsegen = new MyEclipseKeyGen();
 			String res = myeclipsegen.getSerial(userId, "E3MS");
 			System.out.println("Subscription code: " + res);
-			reader.readLine();
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
